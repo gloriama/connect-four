@@ -1,0 +1,22 @@
+// board
+  // properties:
+    -numCols
+    -numRows
+    -matrix: the nested array of arrays that stores what piece (if any) is located at a certain spot
+
+  // methods:
+    -addPiece(player, col): adds a piece at bottom-most free location in this col for this piece
+
+    -hasWon(r, c): will return boolean (true or false) for whether there is a winning streak of four (or more) through this position
+
+    -print(): prints board for console
+
+// main.js
+  currPlayer = PLAYER_ONE
+  while game has not been won:
+    prompt for a column
+    call addPiece(currPlayer, column)
+    set currPlayer to the other player
+
+  // when game has been won:
+    print congratulations to winner
